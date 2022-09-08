@@ -1,6 +1,6 @@
 <div>
   <h1>{{this.title}}</h1>
-  <img [src]="imgUrl" [alt]="imgAlt" [title]="imgTitle">
+  <img [src]="imgUrl" [alt]="imgAlt" [title]="imgTitle" (click)="onClick($event)">
 </div>
 
 <router-outlet></router-outlet>
