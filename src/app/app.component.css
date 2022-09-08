@@ -3,3 +3,9 @@ div{
   font-size: 20px;
   background-color: aliceblue;
 }
+error{
+  font-size: 10px;
+  font-family:'Times New Roman', Times, serif ;
+  font-weight: bold;
+  color:red;
+}
