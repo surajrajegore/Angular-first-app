@@ -11,6 +11,8 @@ export class AppComponent {
   imgAlt = "this is the bridgelabz logo"
   imgTitle = "bridgelabz"
 
+  userName:String = "";
+
   url = "https://bridgelabz.com/"
   ngOnInit():void{
     this.title = "Hello from BridgeLabz.";
