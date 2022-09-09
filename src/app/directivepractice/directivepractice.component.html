@@ -1,0 +1,27 @@
+<h3>ngif Directive practice.</h3>
+<label>FirstName</label><br>
+<input type="text" class="form-control"
+[(ngModel)]="firstName">
+<p>{{firstName}}</p>
+<button class="btn btn-primary"
+[disabled]="!isFirstName"
+(click)="onCeateFirstName()">Add FirstName </button>
+
+<p *ngIf="nameCreated" else no noName>First name is created,first name is {{firstName}}</p>
+<!-- <ng-template #noName>
+  <p>no name created</p>
+</ng-template> -->
+
+<!-- ngfor -->
+
+<p *ngFor="let name of names">{{name}}</p>
+
+
+<h2>ngSwitch</h2>
+<!-- ng-switch -->
+<div [ngSwitch]="name">
+  <h2 *ngSwitchCase="'Suraj'">suraj</h2>
+  <h2 *ngSwitchCase="'Kapil'">kapil</h2>
+  <h2 *ngSwitchCase="'Samir'">samir</h2>
+  <h2 *ngSwitchDefault>No Name Found</h2>
+</div>

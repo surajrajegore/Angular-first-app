@@ -31,4 +31,6 @@ export class AppComponent {
     }
     this.userNameError="Invalid username  "
   }
+  isFirstName = false;
+
 }
